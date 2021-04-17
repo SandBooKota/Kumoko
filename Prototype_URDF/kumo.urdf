@@ -1,0 +1,342 @@
+<?xml version="1.0" ?>
+<robot name="kumo">
+
+<material name="silver">
+  <color rgba="0.700 0.700 0.700 1.000"/>
+</material>
+
+<link name="base_link">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-3.2828523667326645e-16 1.0814101913942895e-15 0.024417844604558786"/>
+    <mass value="0.9242881981348102"/>
+    <inertia ixx="0.0008765218538816384" ixy="-1.5814066500752265e-16" ixz="-5.624227384210757e-18" iyy="0.0009418097370301066" iyz="-2.249078348449023e-19" izz="0.0009790764986276732"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="leg_link1-1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.008995212201879196 -0.004974262250996321 -0.012546221364477746"/>
+    <mass value="0.1519573993334495"/>
+    <inertia ixx="2.0274234427454204e-05" ixy="1.7941490210056084e-06" ixz="5.814195664928903e-07" iyy="1.78853443036426e-05" iyz="-4.155416782984769e-07" izz="2.2930059309905076e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.0332 0.021 -0.0358"/>
+    <geometry>
+      <mesh filename="meshes/leg_link1-1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.0332 0.021 -0.0358"/>
+    <geometry>
+      <mesh filename="meshes/leg_link1-1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="leg_link2-1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.03546087236605392 -0.011615663136520654 -0.0030927268345646852"/>
+    <mass value="0.11219767290112359"/>
+    <inertia ixx="5.670401943062202e-05" ixy="2.0637265724017984e-05" ixz="1.0987232911023484e-05" iyy="5.6851317142925e-05" iyz="-1.1066420772687437e-05" izz="7.118485753461674e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.032493 0.04391 -0.0235"/>
+    <geometry>
+      <mesh filename="meshes/leg_link2-1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.032493 0.04391 -0.0235"/>
+    <geometry>
+      <mesh filename="meshes/leg_link2-1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="leg_link1-2">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.004974262251193878 0.008995212201658907 -0.012546221364477732"/>
+    <mass value="0.1519573993334495"/>
+    <inertia ixx="1.78853443036426e-05" ixy="-1.794149021005527e-06" ixz="4.1554167829851757e-07" iyy="2.027423442745415e-05" iyz="5.814195664928632e-07" izz="2.2930059309904968e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.0332 -0.021 -0.0358"/>
+    <geometry>
+      <mesh filename="meshes/leg_link1-2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.0332 -0.021 -0.0358"/>
+    <geometry>
+      <mesh filename="meshes/leg_link1-2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="leg_link2-2">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.0352326631367181 0.09966387236583367 -0.0030927268345645985"/>
+    <mass value="0.11219767290112359"/>
+    <inertia ixx="5.6851317142925055e-05" ixy="-2.0637265724018038e-05" ixz="1.1066420772687369e-05" iyy="5.670401943062213e-05" iyz="1.0987232911023498e-05" izz="7.118485753461674e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.032493 0.04391 -0.0235"/>
+    <geometry>
+      <mesh filename="meshes/leg_link2-2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.032493 0.04391 -0.0235"/>
+    <geometry>
+      <mesh filename="meshes/leg_link2-2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="leg_link1-3">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.0049742622511938575 -0.008995212201656687 -0.012546221364477753"/>
+    <mass value="0.1519573993334495"/>
+    <inertia ixx="1.78853443036426e-05" ixy="-1.794149021005527e-06" ixz="-4.1554167829851757e-07" iyy="2.027423442745404e-05" iyz="-5.814195664928903e-07" izz="2.2930059309905022e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.0332 0.021 -0.0358"/>
+    <geometry>
+      <mesh filename="meshes/leg_link1-3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.0332 0.021 -0.0358"/>
+    <geometry>
+      <mesh filename="meshes/leg_link1-3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="leg_link2-3">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.10021866313671818 -0.011843872365831475 -0.0030927268345646505"/>
+    <mass value="0.11219767290112359"/>
+    <inertia ixx="5.6851317142925e-05" ixy="-2.0637265724017984e-05" ixz="-1.1066420772687423e-05" iyy="5.670401943062213e-05" iyz="-1.0987232911023484e-05" izz="7.118485753461663e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.032493 0.04391 -0.0235"/>
+    <geometry>
+      <mesh filename="meshes/leg_link2-3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.032493 0.04391 -0.0235"/>
+    <geometry>
+      <mesh filename="meshes/leg_link2-3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="leg_link1-4">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.008995212201879106 0.004974262250998496 -0.012546221364477608"/>
+    <mass value="0.1519573993334495"/>
+    <inertia ixx="2.0274234427454095e-05" ixy="1.7941490210056355e-06" ixz="-5.814195664928903e-07" iyy="1.7885344303642653e-05" iyz="4.1554167829846336e-07" izz="2.2930059309905022e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.0332 -0.021 -0.0358"/>
+    <geometry>
+      <mesh filename="meshes/leg_link1-4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.0332 -0.021 -0.0358"/>
+    <geometry>
+      <mesh filename="meshes/leg_link1-4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="leg_link2-4">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.10044687236605376 0.09943566313652276 -0.0030927268345644562"/>
+    <mass value="0.11219767290112359"/>
+    <inertia ixx="5.670401943062218e-05" ixy="2.06372657240182e-05" ixz="-1.0987232911023457e-05" iyy="5.6851317142924784e-05" iyz="1.1066420772687342e-05" izz="7.118485753461609e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.032493 0.04391 -0.0235"/>
+    <geometry>
+      <mesh filename="meshes/leg_link2-4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.032493 0.04391 -0.0235"/>
+    <geometry>
+      <mesh filename="meshes/leg_link2-4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Rev1-1" type="continuous">
+  <origin rpy="0 0 0" xyz="0.0332 -0.021 0.0358"/>
+  <parent link="base_link"/>
+  <child link="leg_link1-1"/>
+  <axis xyz="-0.0 -0.0 -1.0"/>
+</joint>
+<transmission name="Rev1-1_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Rev1-1">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Rev1-1_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Rev2-1" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.000707 -0.02291 -0.0123"/>
+  <parent link="leg_link1-1"/>
+  <child link="leg_link2-1"/>
+  <axis xyz="-0.707107 -0.707107 0.0"/>
+</joint>
+<transmission name="Rev2-1_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Rev2-1">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Rev2-1_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Rev1-2" type="continuous">
+  <origin rpy="0 0 0" xyz="0.0332 0.021 0.0358"/>
+  <parent link="base_link"/>
+  <child link="leg_link1-2"/>
+  <axis xyz="-0.0 0.0 -1.0"/>
+</joint>
+<transmission name="Rev1-2_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Rev1-2">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Rev1-2_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Rev2-2" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.000707 -0.06491 -0.0123"/>
+  <parent link="leg_link1-2"/>
+  <child link="leg_link2-2"/>
+  <axis xyz="0.707107 -0.707107 0.0"/>
+</joint>
+<transmission name="Rev2-2_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Rev2-2">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Rev2-2_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Rev1-3" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.0332 -0.021 0.0358"/>
+  <parent link="base_link"/>
+  <child link="leg_link1-3"/>
+  <axis xyz="0.0 0.0 -1.0"/>
+</joint>
+<transmission name="Rev1-3_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Rev1-3">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Rev1-3_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Rev2-3" type="continuous">
+  <origin rpy="0 0 0" xyz="0.065693 -0.02291 -0.0123"/>
+  <parent link="leg_link1-3"/>
+  <child link="leg_link2-3"/>
+  <axis xyz="-0.707107 0.707107 0.0"/>
+</joint>
+<transmission name="Rev2-3_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Rev2-3">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Rev2-3_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Rev4-1" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.0332 0.021 0.0358"/>
+  <parent link="base_link"/>
+  <child link="leg_link1-4"/>
+  <axis xyz="0.0 0.0 -1.0"/>
+</joint>
+<transmission name="Rev4-1_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Rev4-1">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Rev4-1_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Rev4-2" type="continuous">
+  <origin rpy="0 0 0" xyz="0.065693 -0.06491 -0.0123"/>
+  <parent link="leg_link1-4"/>
+  <child link="leg_link2-4"/>
+  <axis xyz="0.707107 0.707107 0.0"/>
+</joint>
+<transmission name="Rev4-2_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Rev4-2">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Rev4-2_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+</robot>
