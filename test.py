@@ -18,10 +18,6 @@ roboId = p.loadURDF("Prototype_URDF/kumo.urdf",cubeStartPos, cubeStartOrientatio
                    flags=p.URDF_USE_INERTIA_FROM_FILE)
 numJoints = 8
 
-#joint ranges for null space
-jr = [5.8, 4, 5.8, 4, 5.8, 4, 6]
-#restposes for null space
-rp = [0, 0, 0, 0, 0, 0, 0, 0]
 #joint damping coefficents
 jd = [0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1]
 
@@ -77,17 +73,5 @@ while 1:
                                 positionGain=0.1,
                                 velocityGain=0.1)
 
-#  jointPoses = [0, 0, 0, 0, 0, 0, 0, 0]
-#
-#  for i in range(numJoints):
-#      p.setJointMotorControl2(bodyIndex=roboId,
-#                              jointIndex=i,
-#                              controlMode=p.POSITION_CONTROL,
-#                              targetPosition=jointPoses[i],
-#                              targetVelocity=10,
-#                              force=100,
-#                              positionGain=0.01,
-#                              velocityGain=0.01)
-
-  #jointInfo = p.getJointState(roboId, 1)
-  #print(jointInfo[1])
+  jointInfo = p.getJointState(roboId, 1)
+  print(jointInfo[1])
